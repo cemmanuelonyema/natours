@@ -1,0 +1,39 @@
+
+
+.composition{
+    position: relative;
+
+    &__photo{
+        width: 55%;
+        box-shadow: 0 1rem 2rem rgba($color-black, .4);
+        border-radius: .3rem;
+        position: absolute;
+        z-index: 10;
+        transition: .3s;
+        outline-offset: 2rem;
+
+        &--p1{
+            top: -2rem;
+            left: 0;
+        }
+
+        &--p2{
+            top: 0;
+            right: 0;
+        }
+
+        &--p3{
+            top: 9rem;
+            left: 15%;
+        }
+        &:hover{
+            transform: scale(1.1) translateY(-.5rem);
+            box-shadow: 0 2rem 3rem rgba($color-black, .6);
+            z-index: 20;
+            outline: 1.5rem solid $primary-color ;
+        }
+    }// composition:hover composition__photo:not(:hover)
+    &:hover &__photo:not( :hover) {
+        transform: scale(.9);
+    }
+}

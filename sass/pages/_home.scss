@@ -1,0 +1,29 @@
+.section-about{
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -21vh;
+}
+
+.section-features{
+    padding: 25rem 0;
+    background: linear-gradient(to right bottom, rgba($primary-color-light, 0.815), rgba($primary-color-dark, 0.815)),
+    url(../../img/nat-4.jpg) no-repeat center fixed;
+   background-size: cover;
+   transform: skewY(-7deg);
+   margin-top: -12rem;
+
+   & > *{
+       transform: skewY(7deg);
+   }
+}
+
+.section-tours{
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 50rem 0;
+    margin-top: -10rem;
+}
+
+.section-stories{
+    background-color: $color-grey-light-1;
+    padding: 15rem;
+}
